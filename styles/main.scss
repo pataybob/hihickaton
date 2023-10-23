@@ -1,7 +1,11 @@
+@import url(./about.css);
+
 $primary-color:#FFFFFF;
 $second-color:#000;
 $third-color:#FB1E7D;
 $linear-gradient:to right,#FB1E7D,  #4F00B2;
+
+
 
 *{
     box-sizing: border-box;
@@ -22,6 +26,8 @@ ul,ol,li{
 a{
     text-decoration: none;
 }
+
+
 
 .wrapper{
     overflow-x: hidden;

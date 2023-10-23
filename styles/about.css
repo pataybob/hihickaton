@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+.wrapper .container-main {
+  background: url(../images/bg-aboutus.png);
+  background-size: cover;
+  width: 100vw;
+  height: 1000px;
+}
+.wrapper .container-main header {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .container-main header .header__nav {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  align-items: center;
+}
+.wrapper .container-main header .header__nav li {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.wrapper .container-main header .header__nav a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  color: #000;
+  padding: 15px;
+  border-radius: 15px;
+}
+.wrapper .container-main main {
+  margin-top: 10vh;
+}
+.wrapper .container-main main .main__block {
+  width: 1200px;
+  height: 650px;
+  background: #D9D9D9;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.wrapper .container-main main .main__block h1 {
+  padding: 50px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.wrapper .container-main main .main__block p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrapper .container-main main .main__block .about-buttons {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .container-main main .main__block .about-buttons .team__btn {
+  width: 312px;
+  padding: 15px;
+  background: #FB1E7D;
+  border-radius: 15px;
+  text-align: center;
+}
+.wrapper .container-main main .main__block .about-buttons .intensives {
+  width: 312px;
+  padding: 15px;
+  background: #4F00B2;
+  border-radius: 15px;
+  text-align: center;
+}
+.wrapper .team {
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper .team .container {
+  max-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.wrapper .team .left__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .team .right__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+.wrapper .team .right__side h1 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 500;
+}
+.wrapper .team .right__side .proff {
+  font-size: 24px;
+  font-weight: 400;
+  color: #797979;
+}
+.wrapper .team .right__side p {
+  color: #000;
+  font-size: 28px;
+}
+.wrapper .team .right__side .buttons__team {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.wrapper .team .right__side .buttons__team .about__btn {
+  width: 333px;
+  padding: 20px;
+  background: linear-gradient(to right, #4F00B2, #FB1E7D);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.wrapper .footer {
+  background: linear-gradient(to right, #012E71, #000836);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+}
+.wrapper .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .links h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .links a {
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .intensives h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .socials a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials .social__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .footer .socials .social__img .twitter {
+  margin-left: 25px;
+}/*# sourceMappingURL=about.css.map */
