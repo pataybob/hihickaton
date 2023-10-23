@@ -205,9 +205,9 @@ a {
 }
 .wrapper .advantages-container .adv__grid .grid__item-1 p {
   color: #FFFFFF;
-  max-width: 80%;
+  max-width: 70%;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
 }
 .wrapper .advantages-container .adv__grid .grid__item-1 .icons-container {
   margin-top: 5px;
@@ -238,9 +238,9 @@ a {
 }
 .wrapper .advantages-container .adv__grid .grid__item-2 p {
   color: #FFFFFF;
-  max-width: 80%;
+  max-width: 70%;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
 }
 .wrapper .advantages-container .adv__grid .grid__item-2 .icons-container {
   margin-top: 5px;
@@ -271,9 +271,9 @@ a {
 }
 .wrapper .advantages-container .adv__grid .grid__item-3 p {
   color: #FFFFFF;
-  max-width: 80%;
+  max-width: 70%;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
 }
 .wrapper .advantages-container .adv__grid .grid__item-3 .icons-container {
   margin-top: 5px;
@@ -304,9 +304,9 @@ a {
 }
 .wrapper .advantages-container .adv__grid .grid__item-4 p {
   color: #FFFFFF;
-  max-width: 80%;
+  max-width: 70%;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
 }
 .wrapper .advantages-container .adv__grid .grid__item-4 .icons-container {
   margin-top: 5px;
@@ -318,4 +318,190 @@ a {
   align-items: center;
   gap: 40px;
   justify-content: center;
+}
+.wrapper .consultation-container {
+  background: url(../images/cons-bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 800px;
+}
+.wrapper .consultation-container .forma {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 25px;
+  gap: 230px;
+  width: 850px;
+  height: 500px;
+  margin: 0 auto;
+  background: rgba(15, 5, 5, 0.1);
+  background: linear-gradient(313deg, rgb(79, 0, 178) 28%, rgb(251, 30, 125) 82%);
+  border-radius: 30px;
+}
+.wrapper .consultation-container .forma .text__side {
+  font-size: 17px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 0;
+  padding-left: 10px;
+  justify-content: center;
+}
+.wrapper .consultation-container .forma .text__side .first {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+.wrapper .consultation-container .forma .text__side .first p {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.wrapper .consultation-container .forma .text__side .second {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 12px;
+}
+.wrapper .consultation-container .forma .text__side .second p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.wrapper .consultation-container .forma .text__side .third {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 12px;
+}
+.wrapper .consultation-container .forma .text__side .third p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.wrapper .consultation-container .forma .text__side .four {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 12px;
+}
+.wrapper .consultation-container .forma .text__side .four p {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.wrapper .consultation-container .forma .input__side {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.wrapper .consultation-container .forma .input__side .subject select {
+  width: 100%;
+  min-height: 70px;
+  font-weight: 700;
+  background: #FFFFFF;
+  border: transparent;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: start;
+}
+.wrapper .consultation-container .forma .input__side .class select {
+  width: 100%;
+  height: 60px;
+  font-size: 0.9em;
+  font-weight: 700;
+  background: #FFFFFF;
+  border: transparent;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: start;
+}
+.wrapper .consultation-container .forma .input__side .inputs {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+.wrapper .consultation-container .forma .input__side .inputs input {
+  width: 100%;
+  height: 60px;
+  font-size: 0.9em;
+  background: #FFFFFF;
+  border: transparent;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: start;
+}
+.wrapper .consultation-container .forma .input__side button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  background: #FB1E7D;
+  border: transparent;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+}
+.wrapper .consultation-container .forma .input__side button a {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.wrapper .footer {
+  background: linear-gradient(to right, #012E71, #000836);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+}
+.wrapper .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .links h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .links a {
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .intensives h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .socials a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials .social__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .footer .socials .social__img .twitter {
+  margin-left: 25px;
 }/*# sourceMappingURL=main.css.map */
