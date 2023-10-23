@@ -1,3 +1,207 @@
+$primary-color:#FFFFFF;
+$second-color:#000;
+$third-color:#FB1E7D;
+$linear-gradient:to right,#FB1E7D,  #4F00B2;
+
 *{
-    
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+ul,ol,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    .main-container{
+        background: url(../images/main-bg.png) ;
+        background-size: cover;
+        width: 100vw;
+        height: 1200px;
+        
+        header{
+            display: flex;
+            justify-content: center;
+            .header__nav{
+                margin-top: 90px;
+                display: flex;
+                flex-direction: row;
+                gap: 160px;
+                align-items: center;
+                li{
+                    font-size: 20px;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                }
+                a{
+                    color: $primary-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                    padding: 15px;
+                    border-radius: 15px;
+
+                }
+            }
+        }
+        main{
+            margin: 0 auto;
+            .container__block{
+                margin-top: 10vh;    
+                .block-opacity{
+                    
+                    margin: 0 auto;
+                    width: 1000px;
+                    height: 600px;
+                    background:#D9D9D9;
+                    background-color: rgb(217, 217, 217,0.1);
+                    border-radius: 15px;
+                    .intensiv__block{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 50px;
+                        h1{
+                            padding: 30px;
+                            color: $primary-color;
+                            font-size: 32px;
+                            font-weight: 400;
+                            span{
+                                color: $third-color;
+                                font-size: 32px;
+                                font-weight: 600;
+                            }
+                        }
+                        .intensives{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 100px;
+                            .html5{
+                                background-color: rgb(217, 217, 217,0.1);
+                                width: 243px;
+                                height: 311px;
+                                border-radius: 10px;
+
+                                padding: 20px;
+
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                gap: 30px;
+                                .course{
+                                    font-size: 24px;
+                                    color: $third-color;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+                                .name{
+                                    font-size: 24px;
+                                    color: $primary-color;
+                                    font-weight: 300;
+                                    text-transform: uppercase;
+
+                                }
+
+                            }
+                            .css3{
+                                background-color: rgb(217, 217, 217,0.1);
+                                width: 243px;
+                                height: 311px;
+                                border-radius: 10px;
+
+                                padding: 20px;
+
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                gap: 30px;
+                                .course{
+                                    font-size: 24px;
+                                    color: $third-color;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+                                .name{
+                                    font-size: 24px;
+                                    color: $primary-color;
+                                    font-weight: 300;
+                                    text-transform: uppercase;
+
+                                }
+
+                            }
+                            .js{
+                                background-color: rgb(217, 217, 217,0.1);
+                                width: 243px;
+                                height: 311px;
+                                border-radius: 10px;
+
+                                padding: 20px;
+
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                gap: 30px;
+                                .course{
+                                    font-size: 24px;
+                                    color: $third-color;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                }
+                                .name{
+                                    font-size: 24px;
+                                    color: $primary-color;
+                                    font-weight: 300;
+                                    text-transform: uppercase;
+
+                                }
+
+                            }
+                        }
+                        .intensive__btn{
+                            background: $third-color;
+                            padding: 15px;
+                            border-radius: 5px;
+                            a{
+                                color: $primary-color;
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .advantages-container{
+        background: url(../images/adv-bg.png);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        .adv__head{
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            h1{
+                font-size: 48px;
+                font-weight: 600;
+            }
+        }
+    }
 }

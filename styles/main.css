@@ -1,1 +1,183 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+.wrapper .main-container {
+  background: url(../images/main-bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 1200px;
+}
+.wrapper .main-container header {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .main-container header .header__nav {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  align-items: center;
+}
+.wrapper .main-container header .header__nav li {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.wrapper .main-container header .header__nav a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  padding: 15px;
+  border-radius: 15px;
+}
+.wrapper .main-container main {
+  margin: 0 auto;
+}
+.wrapper .main-container main .container__block {
+  margin-top: 10vh;
+}
+.wrapper .main-container main .container__block .block-opacity {
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  background: #D9D9D9;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 15px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block h1 {
+  padding: 30px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 400;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block h1 span {
+  color: #FB1E7D;
+  font-size: 32px;
+  font-weight: 600;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .html5 {
+  background-color: rgba(217, 217, 217, 0.1);
+  width: 243px;
+  height: 311px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .html5 .course {
+  font-size: 24px;
+  color: #FB1E7D;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .html5 .name {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .css3 {
+  background-color: rgba(217, 217, 217, 0.1);
+  width: 243px;
+  height: 311px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .css3 .course {
+  font-size: 24px;
+  color: #FB1E7D;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .css3 .name {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .js {
+  background-color: rgba(217, 217, 217, 0.1);
+  width: 243px;
+  height: 311px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .js .course {
+  font-size: 24px;
+  color: #FB1E7D;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensives .js .name {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensive__btn {
+  background: #FB1E7D;
+  padding: 15px;
+  border-radius: 5px;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensive__btn a {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wrapper .advantages-container {
+  background: url(../images/adv-bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper .advantages-container .adv__head {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .advantages-container .adv__head h1 {
+  font-size: 48px;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */
