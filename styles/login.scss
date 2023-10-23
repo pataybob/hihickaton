@@ -1,0 +1,161 @@
+
+$primary-color:#FFFFFF;
+$second-color:#000;
+$third-color:#FB1E7D;
+$linear-gradient:to right,#FB1E7D,  #4F00B2;
+
+
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul,ol,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    .container-main{
+        background: url(../images/log-bg.png) ;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        header{
+            display: flex;
+            justify-content: center;
+            .header__nav{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                gap: 160px;
+                align-items: center;
+                li{
+                    font-size: 20px;
+                    color: $second-color;
+                    text-transform: uppercase;
+                }
+                a{
+                    color: $primary-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                    padding: 15px;
+                    border-radius: 15px;
+
+                }
+            }
+        }
+            .reg{
+                width: 457px;
+                height: 431px;
+                background: linear-gradient(to bottom,#4F00B2,#FB1E7D);
+                margin: 150px auto;
+                display: flex;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    h1{
+                        font-size: 24px;
+                        color: $primary-color;
+                        padding: 40px;
+                    }
+                    .form{
+                        .inputs{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 25px;
+                            .mail{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 5px;
+                                input{
+                                        width: 260px;
+                                        height: 50px;
+                                        font-size: 0.9em;
+                 
+                                        background: #FFFFFF;
+                                        border: transparent;
+                                        border-radius: 30px;
+                                        color: #000;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                 
+                                        padding: 0 20px;
+                                        text-align: start;
+                 
+                                        
+                 
+                                    }
+                                }
+                            .key{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                gap: 5px;
+                                input{
+                                        width: 260px;
+                                        height: 50px;
+                                        font-size: 0.9em;
+                 
+                                        background: #FFFFFF;
+                                        border: transparent;
+                                        border-radius: 30px;
+                                        color: #000;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                 
+                                        padding: 0 20px;
+                                        text-align: start;
+                 
+                                        
+                 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .button{
+                        margin-top: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .reg__btn{
+                            margin: 0 auto;
+                            width: 80%;
+                            background: $primary-color;
+                            padding: 10px;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            color: $second-color;
+                            font-size: 12px;
+                            font-weight: 400; 
+                        }
+                        p{
+                            a{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+    }
