@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+.wrapper .personal__container {
+  max-width: 1690px;
+  margin: 0 auto;
+}
+.wrapper .personal__container header {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .personal__container header .header__nav {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+}
+.wrapper .personal__container header .header__nav li {
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.wrapper .personal__container header .header__nav a {
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.wrapper .personal__container header .header__nav .header__btn {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  padding: 15px;
+  border-radius: 15px;
+}
+.wrapper .personal__container main {
+  margin-top: 10vh;
+}
+.wrapper .personal__container main .grid__personal {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". personal messages" ". information-block information-block" ". . .";
+}
+.wrapper .personal__container main .grid__personal .personal {
+  grid-area: personal;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 70px;
+  width: 836px;
+  height: 214px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.wrapper .personal__container main .grid__personal .personal .information {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.wrapper .personal__container main .grid__personal .personal .information .name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .personal__container main .grid__personal .personal .information .name h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.wrapper .personal__container main .grid__personal .personal .information .action {
+  font-size: 18px;
+  font-weight: 400;
+}
+.wrapper .personal__container main .grid__personal .personal .information .links a {
+  color: #1400FF;
+}
+.wrapper .personal__container main .grid__personal .messages {
+  grid-area: messages;
+  display: flex;
+  flex-direction: column;
+  width: 836px;
+  height: 214px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 25px;
+}
+.wrapper .personal__container main .grid__personal .messages h1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+}
+.wrapper .personal__container main .grid__personal .messages .block__messages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+}
+.wrapper .personal__container main .grid__personal .information-block {
+  margin-bottom: -100px;
+  grid-area: information-block;
+  width: 1700px;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .personal__container main .grid__personal .information-block .info__head {
+  display: flex;
+  flex-direction: row;
+  gap: 850px;
+  align-items: center;
+}
+.wrapper .personal__container main .grid__personal .information-block .info__head h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.wrapper .personal__container main .grid__personal .information-block .info__head a {
+  color: #1400FF;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block {
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .mail {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .mail h2 {
+  font-size: 22px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .mail p {
+  font-size: 18px;
+  color: #000AFF;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .country {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .country h2 {
+  font-size: 22px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .country p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .city {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .city h2 {
+  font-size: 22px;
+}
+.wrapper .personal__container main .grid__personal .information-block .main__block .city p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wrapper .personal__container .personal__intensives-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.wrapper .personal__container .personal__intensives-container h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 400;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block p {
+  font-size: 36px;
+  font-weight: 400;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives {
+  margin-top: 15vh;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  margin: 0 auto;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .h1-head {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low h2 {
+  font-size: 28px;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .low-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 230px;
+  gap: 30px;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .low-lvl .name_intense {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .low-lvl .prepod {
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 77%;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .low-lvl .prepod a {
+  color: #000AFF;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .med-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 230px;
+  gap: 30px;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .med-lvl .name_intense {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .med-lvl .prepod {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 70%;
+  text-align: center;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .med-lvl .prepod a {
+  color: #000AFF;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .high-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 210px;
+  gap: 30px;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .high-lvl .name_intense {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .high-lvl .prepod {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 70%;
+  text-align: center;
+}
+.wrapper .personal__container .personal__intensives-container .personal__intensives-block .personal-container__intensives .container__items-low .items .high-lvl .prepod a {
+  color: #000AFF;
+}
+.wrapper .footer {
+  background: linear-gradient(to right, #012E71, #000836);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+  margin-top: 20vh;
+}
+.wrapper .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .links h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .links a {
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .intensives h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .socials a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials .social__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .footer .socials .social__img .twitter {
+  margin-left: 25px;
+}/*# sourceMappingURL=personal.css.map */
