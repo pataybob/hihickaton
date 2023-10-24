@@ -1,0 +1,391 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+.wrapper .container {
+  background: url(../images/cons-bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 1000px;
+}
+.wrapper .container header {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .container header .header__nav {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  align-items: center;
+}
+.wrapper .container header .header__nav li {
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.wrapper .container header .header__nav a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  padding: 15px;
+  border-radius: 15px;
+}
+.wrapper .container main {
+  margin-top: 10vh;
+}
+.wrapper .container main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.wrapper .container main .content h1 {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  max-width: 40%;
+  font-size: 28px;
+  font-weight: 600;
+}
+.wrapper .container main .content .subscription__container {
+  gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper .container main .content .subscription__container .start__level {
+  width: 360px;
+  height: 470px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 50px;
+}
+.wrapper .container main .content .subscription__container .start__level .date {
+  width: 100%;
+  height: 63px;
+  background: linear-gradient(to right, #4F00B2, #FB1E7D);
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+}
+.wrapper .container main .content .subscription__container .start__level .date h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.wrapper .container main .content .subscription__container .start__level .advantages__sub ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .container main .content .subscription__container .start__level .advantages__sub ul li::before {
+  margin-right: 10px;
+  content: "�";
+}
+.wrapper .container main .content .subscription__container .start__level .price__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .container main .content .subscription__container .start__level .price__btn h2 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+.wrapper .container main .content .subscription__container .start__level .price__btn .btn {
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.wrapper .container main .content .subscription__container .start__level .price__btn .btn a {
+  color: #FFFFFF;
+}
+.wrapper .container main .content .subscription__container .medium__level {
+  width: 360px;
+  height: 470px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 50px;
+}
+.wrapper .container main .content .subscription__container .medium__level .date {
+  width: 100%;
+  height: 63px;
+  background: linear-gradient(to right, #4F00B2, #FB1E7D);
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+}
+.wrapper .container main .content .subscription__container .medium__level .date h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  max-width: 100%;
+}
+.wrapper .container main .content .subscription__container .medium__level .advantages__sub ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .container main .content .subscription__container .medium__level .advantages__sub ul li::before {
+  margin-right: 10px;
+  content: "�";
+}
+.wrapper .container main .content .subscription__container .medium__level .price__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .container main .content .subscription__container .medium__level .price__btn h2 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+.wrapper .container main .content .subscription__container .medium__level .price__btn .btn {
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.wrapper .container main .content .subscription__container .medium__level .price__btn .btn a {
+  color: #FFFFFF;
+}
+.wrapper .container main .content .subscription__container .high__level {
+  width: 360px;
+  height: 470px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 50px;
+}
+.wrapper .container main .content .subscription__container .high__level .date {
+  width: 100%;
+  height: 63px;
+  background: linear-gradient(to right, #4F00B2, #FB1E7D);
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+}
+.wrapper .container main .content .subscription__container .high__level .date h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.wrapper .container main .content .subscription__container .high__level .advantages__sub ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .container main .content .subscription__container .high__level .advantages__sub ul li::before {
+  margin-right: 10px;
+  content: "�";
+}
+.wrapper .container main .content .subscription__container .high__level .price__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .container main .content .subscription__container .high__level .price__btn h2 {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+.wrapper .container main .content .subscription__container .high__level .price__btn .btn {
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.wrapper .container main .content .subscription__container .high__level .price__btn .btn a {
+  color: #FFFFFF;
+}
+.wrapper .container__intensives {
+  background: url(../images/adv-bg.png);
+  background-size: cover;
+  width: 100vw;
+  height: 1000px;
+}
+.wrapper .container__intensives .container__items-low {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  margin: 0 auto;
+}
+.wrapper .container__intensives .container__items-low .h1-head {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.wrapper .container__intensives .container__items-low h2 {
+  font-size: 28px;
+}
+.wrapper .container__intensives .container__items-low .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.wrapper .container__intensives .container__items-low .items .low-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 230px;
+  gap: 30px;
+}
+.wrapper .container__intensives .container__items-low .items .low-lvl h1.lvl-h1 {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .items .low-lvl p.lvl-p {
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .items .med-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 230px;
+  gap: 30px;
+}
+.wrapper .container__intensives .container__items-low .items .med-lvl h1.lvl-h1 {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .items .med-lvl p.lvl-p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 70%;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .items .high-lvl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 210px;
+  gap: 30px;
+}
+.wrapper .container__intensives .container__items-low .items .high-lvl h1.lvl-h1 {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 100%;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .items .high-lvl p.lvl-p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 70%;
+  text-align: center;
+}
+.wrapper .container__intensives .container__items-low .intense__btn {
+  width: 340px;
+  height: 60px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.wrapper .container__intensives .container__items-low .intense__btn a {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+.wrapper .footer {
+  background: linear-gradient(to right, #012E71, #000836);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+}
+.wrapper .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .links h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .links a {
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .intensives h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .socials a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials .social__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .footer .socials .social__img .twitter {
+  margin-left: 25px;
+}/*# sourceMappingURL=intensives.css.map */
