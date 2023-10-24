@@ -1,0 +1,379 @@
+
+$primary-color:#FFFFFF;
+$second-color:#000;
+$third-color:#FB1E7D;
+$linear-gradient:to right,#FB1E7D,  #4F00B2;
+
+
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul,ol,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    .container{
+        background: url(../images/cons-bg.png) ;
+        background-size: cover;
+        width: 100vw;
+        height: 1000px;
+        header{
+            display: flex;
+            justify-content: center;
+            .header__nav{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                gap: 160px;
+                align-items: center;
+                li{
+                    font-size: 20px;
+                    color: $second-color;
+                    text-transform: uppercase;
+                }
+                a{
+                    color: $primary-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                    padding: 15px;
+                    border-radius: 15px;
+
+                }
+            }
+        }
+        main{
+            margin-top: 10vh;
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 70px;
+                h1{
+                    margin: 0 auto;
+                    align-items: center;
+                    text-align: center;
+                    max-width: 40%;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                .subscription__container{
+                    gap: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    .start__level{
+                        width: 360px;
+                        height: 470px;
+                        background: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 15px;
+                        gap: 50px;
+                        .date{
+                            width: 100%;
+                            height: 63px;
+                            background: linear-gradient(to right,#4F00B2,#FB1E7D);
+                            border-radius: 15px 15px 0px 0px;
+                            display: flex;
+                            h1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: $primary-color;
+                                font-weight: 400;
+                            }
+                        }
+                            .advantages__sub{
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    li{
+                                        &::before{
+                                            margin-right: 10px;
+                                            content: '\128190';
+                                        }
+                                    }
+                                }
+
+                            }
+                            .price__btn{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                h2{
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+                                .btn{
+                                    background: linear-gradient(to right ,#FB1E7D,#4F00B2,);
+                                    width: 150px;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;   
+                                    justify-content: center; 
+                                    border-radius: 5px;
+                                    a{
+                                    color: $primary-color;
+
+                                    }
+                                }
+                                
+                            }
+                    }
+                    .medium__level{
+                        width: 360px;
+                        height: 470px;
+                        background: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 15px;
+                        gap: 50px;
+                        .date{
+                            width: 100%;
+                            height: 63px;
+                            background: linear-gradient(to right,#4F00B2,#FB1E7D);
+                            border-radius: 15px 15px 0px 0px;
+                            display: flex;
+                            h1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: $primary-color;
+                                font-weight: 400;
+                                max-width: 100%;
+                            }
+                        }
+                            .advantages__sub{
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    li{
+                                        &::before{
+                                            margin-right: 10px;
+                                            content: '\128190';
+                                        }
+                                    }
+                                }
+
+                            }
+                            .price__btn{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                h2{
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+                                .btn{
+                                    background: linear-gradient(to right ,#FB1E7D,#4F00B2,);
+                                    width: 150px;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;   
+                                    justify-content: center; 
+                                    border-radius: 5px;
+                                    a{
+                                    color: $primary-color;
+
+                                    }
+                                }
+                                
+                            }
+                    }
+                    .high__level{
+                        width: 360px;
+                        height: 470px;
+                        background: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 15px;
+                        gap: 50px;
+                        .date{
+                            width: 100%;
+                            height: 63px;
+                            background: linear-gradient(to right,#4F00B2,#FB1E7D);
+                            border-radius: 15px 15px 0px 0px;
+                            display: flex;
+                            h1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: $primary-color;
+                                font-weight: 400;
+                            }
+                        }
+                            .advantages__sub{
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 30px;
+                                    li{
+                                        &::before{
+                                            margin-right: 10px;
+                                            content: '\128190';
+                                        }
+                                    }
+                                }
+
+                            }
+                            .price__btn{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                h2{
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    text-align: center;
+                                }
+                                .btn{
+                                    background: linear-gradient(to right ,#FB1E7D,#4F00B2,);
+                                    width: 150px;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;   
+                                    justify-content: center; 
+                                    border-radius: 5px;
+                                    a{
+                                    color: $primary-color;
+
+                                    }
+                                }
+                                
+                            }
+                    }
+                }
+            }
+
+        }
+    }
+    .container__intensives{
+        background: url(../images/adv-bg.png) ;
+        background-size: cover;
+        width: 100vw;
+        height: 1000px;
+        .container__items-low{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 150px;
+            margin: 0 auto;
+            .h1-head{
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            h2{
+                font-size: 28px;
+            }
+            .items{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+                .low-lvl{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 500px;
+                    height: 230px;
+                    gap: 30px;
+                    h1.lvl-h1{
+                        font-size: 24px;
+                        font-weight: 600;
+                        max-width: 100%;
+                        text-align: center;
+    
+                    }
+                    p.lvl-p{
+                        justify-content: flex-end;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-align: center;
+    
+                    }
+                }
+                .med-lvl{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 500px;
+                    height: 230px;
+                    gap: 30px;
+                    h1.lvl-h1{
+                        font-size: 24px;
+                        font-weight: 600;
+                        max-width: 100%;
+                        text-align: center;
+    
+                    }
+                    p.lvl-p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        max-width: 70%;
+                        text-align: center;
+    
+                    }
+                }
+                .high-lvl{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 500px;
+                    height: 210px;
+                    gap: 30px;
+                    
+                    h1.lvl-h1{
+                        font-size: 24px;
+                        font-weight: 600;
+                        max-width: 100%;
+                        text-align: center;
+    
+                    }
+                    p.lvl-p{
+                        font-size: 18px;
+                        font-weight: 400;
+                        max-width: 70%;
+                        text-align: center;
+    
+                    }
+                }
+            }
+            .intense__btn{
+                width: 340px;
+                height: 60px;
+                margin: 0 auto;
+                background: linear-gradient(to right ,#FB1E7D,#4F00B2,);
+                display: flex;
+                align-items: center;   
+                justify-content: center; 
+                border-radius: 5px;
+                a{
+                    color: $primary-color;
+                    font-size: 22px;
+                }
+            }
+        }     
+          
+    }
+}
