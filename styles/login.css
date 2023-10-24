@@ -120,8 +120,9 @@ a {
   gap: 20px;
 }
 .wrapper .container-main .reg .button .reg__btn {
+  margin-left: 330px;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   background: #FFFFFF;
   padding: 10px;
   border-radius: 10px;
