@@ -52,6 +52,12 @@ a{
                     text-transform: uppercase;
                 }
                 a{
+                    font-size: 20px;
+                    color: $primary-color;
+                    text-transform: uppercase;
+
+                }
+                .header__btn{
                     color: $primary-color;
                     font-size: 20px;
                     text-transform: uppercase;

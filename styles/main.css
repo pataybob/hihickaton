@@ -42,6 +42,11 @@ a {
   text-transform: uppercase;
 }
 .wrapper .main-container header .header__nav a {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.wrapper .main-container header .header__nav .header__btn {
   color: #FFFFFF;
   font-size: 20px;
   text-transform: uppercase;
