@@ -376,4 +376,56 @@ a{
         }     
           
     }
+    .footer{
+        background: linear-gradient(to right , #012E71, #000836);
+        height: 300px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 200px;
+        padding: 50px;
+        .links{
+            h1{
+                font-size: 30px;
+                color: $primary-color;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a{
+                color: $primary-color;
+            }
+        }
+        .intensives{
+            h1{
+                font-size: 30px;
+                color: $primary-color;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a{
+                color: $primary-color;
+            }
+        }
+        .socials{
+            h1{
+                font-size: 30px;
+                color: $primary-color;
+            }
+            a{
+                color: $primary-color;
+            }
+            .social__img{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+                .twitter{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
 }

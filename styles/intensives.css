@@ -338,4 +338,54 @@ a {
 .wrapper .container__intensives .container__items-low .intense__btn a {
   color: #FFFFFF;
   font-size: 22px;
+}
+.wrapper .footer {
+  background: linear-gradient(to right, #012E71, #000836);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+  padding: 50px;
+}
+.wrapper .footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .links h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .links a {
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .intensives h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .intensives a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials h1 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.wrapper .footer .socials a {
+  color: #FFFFFF;
+}
+.wrapper .footer .socials .social__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper .footer .socials .social__img .twitter {
+  margin-left: 25px;
 }/*# sourceMappingURL=intensives.css.map */
