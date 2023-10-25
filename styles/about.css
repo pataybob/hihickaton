@@ -36,12 +36,31 @@ a {
   gap: 160px;
   align-items: center;
 }
-.wrapper .container-main header .header__nav li {
+.wrapper .container-main header .header__nav .nav__item {
   font-size: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-.wrapper .container-main header .header__nav a {
+.wrapper .container-main header .header__nav .nav__item::after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.wrapper .container-main header .header__nav .nav__item:hover {
+  color: #FFFFFF;
+  transition: 0.3s ease;
+}
+.wrapper .container-main header .header__nav .nav__item:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.wrapper .container-main header .header__nav .header__btn {
   color: #FFFFFF;
   font-size: 20px;
   text-transform: uppercase;
@@ -90,12 +109,28 @@ a {
   border-radius: 15px;
   text-align: center;
 }
+.wrapper .container-main main .main__block .about-buttons .team__btn:hover {
+  transition: 0.4s ease;
+  background-color: #FFFFFF;
+}
+.wrapper .container-main main .main__block .about-buttons .team__btn a:hover {
+  color: #000;
+  transition: 0.4s ease;
+}
 .wrapper .container-main main .main__block .about-buttons .intensives {
   width: 312px;
   padding: 15px;
   background: #4F00B2;
   border-radius: 15px;
   text-align: center;
+}
+.wrapper .container-main main .main__block .about-buttons .intensives:hover {
+  transition: 0.4s ease;
+  background-color: #FFFFFF;
+}
+.wrapper .container-main main .main__block .about-buttons .intensives a:hover {
+  color: #000;
+  transition: 0.4s ease;
 }
 .wrapper .team {
   width: 100vw;
@@ -150,6 +185,14 @@ a {
   justify-content: center;
   border-radius: 10px;
 }
+.wrapper .team .right__side .buttons__team .about__btn:hover {
+  transition: 0.4s ease;
+  scale: 1.02;
+}
+.wrapper .team .right__side .buttons__team .github:hover {
+  transition: 0.4s ease;
+  scale: 1.1;
+}
 .wrapper .footer {
   background: linear-gradient(to right, #012E71, #000836);
   height: 300px;
@@ -172,6 +215,10 @@ a {
 .wrapper .footer .links a {
   color: #FFFFFF;
 }
+.wrapper .footer .links a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
+}
 .wrapper .footer .intensives {
   display: flex;
   flex-direction: column;
@@ -183,6 +230,10 @@ a {
 }
 .wrapper .footer .intensives a {
   color: #FFFFFF;
+}
+.wrapper .footer .intensives a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
 }
 .wrapper .footer .socials h1 {
   font-size: 30px;
@@ -199,4 +250,8 @@ a {
 }
 .wrapper .footer .socials .social__img .twitter {
   margin-left: 25px;
+}
+.wrapper .footer .socials .social__img img:hover {
+  transition: 0.4s ease;
+  scale: 1.1;
 }/*# sourceMappingURL=about.css.map */

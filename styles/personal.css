@@ -38,7 +38,31 @@ a {
   color: #000;
   text-transform: uppercase;
 }
-.wrapper .personal__container header .header__nav a {
+.wrapper .personal__container header .header__nav li .nav__item {
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+.wrapper .personal__container header .header__nav li .nav__item::after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.wrapper .personal__container header .header__nav li .nav__item:hover {
+  color: #012E71;
+  transition: 0.3s ease;
+}
+.wrapper .personal__container header .header__nav li .nav__item:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.wrapper .personal__container header .header__nav .header__btn {
   font-size: 20px;
   color: #000;
   text-transform: uppercase;
@@ -120,7 +144,7 @@ a {
 .wrapper .personal__container main .grid__personal .information-block {
   margin-bottom: -100px;
   grid-area: information-block;
-  width: 1700px;
+  width: 1682px;
   height: 300px;
   border: 1px solid #000;
   border-radius: 10px;
@@ -318,6 +342,10 @@ a {
 .wrapper .footer .links a {
   color: #FFFFFF;
 }
+.wrapper .footer .links a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
+}
 .wrapper .footer .intensives {
   display: flex;
   flex-direction: column;
@@ -329,6 +357,10 @@ a {
 }
 .wrapper .footer .intensives a {
   color: #FFFFFF;
+}
+.wrapper .footer .intensives a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
 }
 .wrapper .footer .socials h1 {
   font-size: 30px;
@@ -345,4 +377,8 @@ a {
 }
 .wrapper .footer .socials .social__img .twitter {
   margin-left: 25px;
+}
+.wrapper .footer .socials .social__img img:hover {
+  transition: 0.4s ease;
+  scale: 1.1;
 }/*# sourceMappingURL=personal.css.map */

@@ -43,8 +43,33 @@ a{
                     font-size: 20px;
                     color: $second-color;
                     text-transform: uppercase;
+                    .nav__item{
+                        font-size: 20px;
+                        color: $second-color;
+                        text-transform: uppercase;
+                        &::after{
+                            display: block;
+                            left: 0; 
+                            width: 0;
+                            height: 2px; 
+                            background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                            content: "";
+                            transition: width 0.3s ease-out; 
+
+                        }
+                        &:hover{
+                            color: #012E71;
+                            transition: .3s ease;
+                        }
+                        &:hover:after{
+                            width: 100%;
+                            height: 2px;
+                            left: 0;
+                            transition: all .3s linear;
+                        }
+                    }
                 }
-                a{
+                .header__btn{
                     color: $primary-color;
                     font-size: 20px;
                     text-transform: uppercase;

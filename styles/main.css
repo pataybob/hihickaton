@@ -29,30 +29,58 @@ a {
   display: flex;
   justify-content: center;
 }
-.wrapper .main-container header .header__nav {
+.wrapper .main-container header .header__nav-main {
   margin-top: 90px;
   display: flex;
   flex-direction: row;
-  gap: 160px;
+  gap: 90px;
   align-items: center;
 }
-.wrapper .main-container header .header__nav li {
+.wrapper .main-container header .header__nav-main li {
   font-size: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-.wrapper .main-container header .header__nav a {
+.wrapper .main-container header .header__nav-main li .nav__item {
   font-size: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-.wrapper .main-container header .header__nav .header__btn {
+.wrapper .main-container header .header__nav-main li .nav__item::after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #FB1E7D, #4F00B2);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.wrapper .main-container header .header__nav-main li .nav__item:hover {
+  color: #FB1E7D;
+  transition: 0.3s ease;
+}
+.wrapper .main-container header .header__nav-main li .nav__item:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.wrapper .main-container header .header__nav-main .header__btn {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.wrapper .main-container header .header__nav-main .header__btn {
   color: #FFFFFF;
   font-size: 20px;
   text-transform: uppercase;
   background: linear-gradient(to right, #FB1E7D, #4F00B2);
   padding: 15px;
   border-radius: 15px;
+}
+.wrapper .main-container header .header__nav-main .header__btn:hover {
+  transition: width 0.3s ease-out;
+  background: linear-gradient(to right, #4F00B2, #FB1E7D);
 }
 .wrapper .main-container main {
   margin: 0 auto;
@@ -171,6 +199,10 @@ a {
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 400;
+}
+.wrapper .main-container main .container__block .block-opacity .intensiv__block .intensive__btn:hover {
+  background-color: #4F00B2;
+  transition: 0.4s ease;
 }
 .wrapper .advantages-container {
   background: url(../images/adv-bg.png);
@@ -461,6 +493,14 @@ a {
   color: #FFFFFF;
   font-weight: 500;
 }
+.wrapper .consultation-container .forma .input__side button a:hover {
+  transition: all 0.4s ease;
+  color: #000;
+}
+.wrapper .consultation-container .forma .input__side button:hover {
+  transition: all 0.4s ease;
+  background: #FFFFFF;
+}
 .wrapper .footer {
   background: linear-gradient(to right, #012E71, #000836);
   height: 300px;
@@ -483,6 +523,10 @@ a {
 .wrapper .footer .links a {
   color: #FFFFFF;
 }
+.wrapper .footer .links a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
+}
 .wrapper .footer .intensives {
   display: flex;
   flex-direction: column;
@@ -494,6 +538,10 @@ a {
 }
 .wrapper .footer .intensives a {
   color: #FFFFFF;
+}
+.wrapper .footer .intensives a:hover {
+  color: #FB1E7D;
+  transition: all 0.4s ease-out;
 }
 .wrapper .footer .socials h1 {
   font-size: 30px;
@@ -510,4 +558,8 @@ a {
 }
 .wrapper .footer .socials .social__img .twitter {
   margin-left: 25px;
+}
+.wrapper .footer .socials .social__img img:hover {
+  transition: 0.4s ease;
+  scale: 1.1;
 }/*# sourceMappingURL=main.css.map */

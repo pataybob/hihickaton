@@ -43,12 +43,32 @@ a{
                 flex-direction: row;
                 gap: 160px;
                 align-items: center;
-                li{
+                .nav__item{
                     font-size: 20px;
                     color: $primary-color;
                     text-transform: uppercase;
+                    &::after{
+                        display: block;
+                        left: 0; 
+                        width: 0;
+                        height: 2px; 
+                        background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                        content: "";
+                        transition: width 0.3s ease-out; 
+
+                    }
+                    &:hover{
+                        color: $primary-color;
+                        transition: .3s ease;
+                    }
+                    &:hover:after{
+                        width: 100%;
+                        height: 2px;
+                        left: 0;
+                        transition: all .3s linear;
+                    }
                 }
-                a{
+                .header__btn{
                     color: $primary-color;
                     font-size: 20px;
                     text-transform: uppercase;
@@ -96,6 +116,16 @@ a{
                         background: #FB1E7D;
                         border-radius: 15px;
                         text-align: center;
+                        &:hover{
+                            transition: 0.4s ease;
+                            background-color: #FFFFFF;
+                        }
+                        a{
+                            &:hover{
+                                color: $second-color;
+                                transition: 0.4s ease;
+                            }
+                        }
                     }
                     .intensives{
                         width: 312px;
@@ -103,6 +133,16 @@ a{
                         background: #4F00B2;
                         border-radius: 15px;
                         text-align: center;
+                        &:hover{
+                            transition: 0.4s ease;
+                            background-color: #FFFFFF;
+                        }
+                        a{
+                            &:hover{
+                                color: $second-color;
+                                transition: 0.4s ease;
+                            }
+                        }
 
                     }
                 }
@@ -159,9 +199,16 @@ a{
                         align-items: center;
                         justify-content: center;
                         border-radius: 10px;
-                        a{
-
+                        &:hover{
+                            transition: 0.4s ease;
+                           scale: 1.020;
+                            }
                         }
+                        .github{
+                            &:hover{
+                                transition: 0.4s ease;
+                               scale: 1.10;
+                            }
                     }
                 }
             }
@@ -185,6 +232,11 @@ a{
                 gap: 30px;
                 a{
                     color: $primary-color;
+                    &:hover{
+                        color:#FB1E7D;
+                        transition: all 0.4s ease-out; 
+    
+                    }
                 }
             }
             .intensives{
@@ -197,6 +249,11 @@ a{
                 gap: 30px;
                 a{
                     color: $primary-color;
+                    &:hover{
+                        color:#FB1E7D;
+                        transition: all 0.4s ease-out; 
+    
+                    }
                 }
             }
             .socials{
@@ -214,6 +271,12 @@ a{
                     gap: 30px;
                     .twitter{
                         margin-left: 25px;
+                    }
+                    img{
+                        &:hover{
+                            transition: 0.4s ease;
+                            scale: 1.1;
+                        }
                     }
                 }
             }

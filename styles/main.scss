@@ -40,22 +40,46 @@ a{
         header{
             display: flex;
             justify-content: center;
-            .header__nav{
+            .header__nav-main{
                 margin-top: 90px;
                 display: flex;
                 flex-direction: row;
-                gap: 160px;
+                gap: 90px;
                 align-items: center;
                 li{
                     font-size: 20px;
                     color: $primary-color;
                     text-transform: uppercase;
+                    .nav__item{
+                        font-size: 20px;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                        &::after{
+                            display: block;
+                            left: 0; 
+                            width: 0;
+                            height: 2px; 
+                            background: linear-gradient(to right,#FB1E7D,  #4F00B2);
+                            content: "";
+                            transition: width 0.3s ease-out; 
+
+                        }
+                        &:hover{
+                            color: $third-color;
+                            transition: .3s ease;
+                        }
+                        &:hover:after{
+                            width: 100%;
+                            height: 2px;
+                            left: 0;
+                            transition: all .3s linear;
+                        }
+                    }
                 }
-                a{
+                .header__btn{
                     font-size: 20px;
                     color: $primary-color;
                     text-transform: uppercase;
-
                 }
                 .header__btn{
                     color: $primary-color;
@@ -64,6 +88,10 @@ a{
                     background: linear-gradient(to right,#FB1E7D,  #4F00B2);
                     padding: 15px;
                     border-radius: 15px;
+                    &:hover{
+                        transition: width 0.3s ease-out; 
+                        background: linear-gradient(to right, #4F00B2,#FB1E7D);
+                    }
 
                 }
             }
@@ -193,6 +221,10 @@ a{
                                 color: $primary-color;
                                 font-size: 20px;
                                 font-weight: 400;
+                            }
+                            &:hover{
+                                background-color: #4F00B2;
+                                transition: 0.4s ease;
                             }
                         }
                     }
@@ -515,6 +547,14 @@ a{
                    a{
                        color: #FFFFFF;
                        font-weight: 500;
+                       &:hover{
+                        transition: all 0.4s ease;
+                        color: $second-color;
+                       }
+                   }
+                   &:hover{
+                    transition: all 0.4s ease ;
+                    background: $primary-color;
                    }
                }
             }
@@ -539,6 +579,11 @@ a{
             gap: 30px;
             a{
                 color: $primary-color;
+                &:hover{
+                    color:#FB1E7D;
+                    transition: all 0.4s ease-out; 
+
+                }
             }
         }
         .intensives{
@@ -551,6 +596,11 @@ a{
             gap: 30px;
             a{
                 color: $primary-color;
+                &:hover{
+                    color:#FB1E7D;
+                    transition: all 0.4s ease-out; 
+
+                }
             }
         }
         .socials{
@@ -568,6 +618,12 @@ a{
                 gap: 30px;
                 .twitter{
                     margin-left: 25px;
+                }
+                img{
+                    &:hover{
+                        transition: 0.4s ease;
+                        scale: 1.1;
+                    }
                 }
             }
         }
